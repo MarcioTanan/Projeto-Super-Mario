@@ -1,24 +1,79 @@
-@charset "utf-8";
-
 body {
   font-family: "Poppins";
 }
 
 .cabecalho {
+  background-color: blue;
   display: flex;
   justify-content: space-between;
-
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .cabecalho .logo {
   width: 65px;
-  margin-left: 10px;
-  
+ 
 }
 
-.cabecalho .menu{
+.cabecalho .menu {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-right: 10px;
+  
+}
+
+.cabecalho nav li a {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+  background-color: #d5011d;
+}
+
+.container {
+  max-width: 1440;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height:calc (100vh - 132px);
+  padding: 0 30px 30px;
+}
+
+.container .imagem-titulo {
+  max-width: 500px;
+}
+
+.container .descricao{
+  color: #a8adb7;
+  width: 85%;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.container .botao-trailer {
+  background-color: #ff0021;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+  border-radius: 10px;
+}
+
+.container .botao-trailer:hover {
+  transform: scale(1.2);
+}
+
+.fundo-video {
+  position: absolute;
+  z-index: -1;
 }
