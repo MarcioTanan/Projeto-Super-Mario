@@ -1,6 +1,10 @@
-@media (max-width: 792px) {
+@media (max-width: 768px) {
   body {
     background-color: #f44336;
+  }
+
+  .cabecalho {
+    max-width: 600px;
   }
 
 .fundo-video{
@@ -12,10 +16,11 @@
   justify-content: center;
   height: auto;
   gap: 30px;
+  max-width: 600px;
 }
 
 .container .mario {
-  max-width: 50%;
+  max-width: 30%;
 }
 
 .container .informacoes {
